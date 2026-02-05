@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "mine-araxa",
+      "name": "Araxá Mine",
+      "stage": "mine",
+      "latitude": -19.6,
+      "longitude": -46.94,
+      "country": "Brazil",
+      "operator": "CBMM",
+      "capacity_tpa": 90000,
+      "status": "active",
+      "connections": ["smelter-cbmm", "smelter-ningxia"]
+    },
+    {
+      "id": "mine-catalao",
+      "name": "Catalão Mine",
+      "stage": "mine",
+      "latitude": -18.17,
+      "longitude": -47.94,
+      "country": "Brazil",
+      "operator": "CMOC",
+      "capacity_tpa": 16000,
+      "status": "active",
+      "connections": ["smelter-ningxia"]
+    },
+    {
+      "id": "mine-niobec",
+      "name": "Niobec Mine",
+      "stage": "mine",
+      "latitude": 48.37,
+      "longitude": -71.24,
+      "country": "Canada",
+      "operator": "Magris Resources",
+      "capacity_tpa": 8000,
+      "status": "active",
+      "connections": ["smelter-europe"]
+    },
+    {
+      "id": "smelter-cbmm",
+      "name": "Araxa Refinery",
+      "stage": "smelter",
+      "latitude": -19.59,
+      "longitude": -46.95,
+      "country": "Brazil",
+      "operator": "CBMM",
+      "capacity_tpa": 85000,
+      "status": "active",
+      "connections": ["processor-us-alloys", "processor-eu-specialty"]
+    },
+    {
+      "id": "smelter-ningxia",
+      "name": "Ningxia Niobium Refinery",
+      "stage": "smelter",
+      "latitude": 38.47,
+      "longitude": 106.27,
+      "country": "China",
+      "operator": "Ningxia Orient",
+      "capacity_tpa": 22000,
+      "status": "active",
+      "connections": ["processor-jp-advanced", "processor-cn-powder"]
+    },
+    {
+      "id": "smelter-europe",
+      "name": "Rhine Refinery",
+      "stage": "smelter",
+      "latitude": 50.94,
+      "longitude": 6.96,
+      "country": "Germany",
+      "operator": "EuroNiobium",
+      "capacity_tpa": 12000,
+      "status": "planned",
+      "connections": ["processor-eu-specialty"]
+    },
+    {
+      "id": "processor-us-alloys",
+      "name": "Great Lakes Alloy Plant",
+      "stage": "processor",
+      "latitude": 42.33,
+      "longitude": -83.04,
+      "country": "United States",
+      "operator": "Niobium Steelworks",
+      "capacity_tpa": 30000,
+      "status": "active",
+      "connections": ["battery-na-plant"]
+    },
+    {
+      "id": "processor-jp-advanced",
+      "name": "Kansai Advanced Materials",
+      "stage": "processor",
+      "latitude": 34.69,
+      "longitude": 135.5,
+      "country": "Japan",
+      "operator": "Kansai Materials",
+      "capacity_tpa": 14000,
+      "status": "active",
+      "connections": ["battery-asia-plant"]
+    },
+    {
+      "id": "processor-cn-powder",
+      "name": "Sichuan Powder Metals",
+      "stage": "processor",
+      "latitude": 30.57,
+      "longitude": 104.07,
+      "country": "China",
+      "operator": "Sichuan Metals",
+      "capacity_tpa": 11000,
+      "status": "active",
+      "connections": ["battery-asia-plant"]
+    },
+    {
+      "id": "processor-eu-specialty",
+      "name": "Nordic Specialty Processor",
+      "stage": "processor",
+      "latitude": 59.33,
+      "longitude": 18.07,
+      "country": "Sweden",
+      "operator": "Nordic Advanced",
+      "capacity_tpa": 9000,
+      "status": "planned",
+      "connections": ["battery-eu-plant"]
+    },
+    {
+      "id": "battery-na-plant",
+      "name": "Battery Plant A – North America",
+      "stage": "battery_manufacturing",
+      "latitude": 36.17,
+      "longitude": -86.78,
+      "country": "United States",
+      "operator": "CellWorks",
+      "capacity_tpa": null,
+      "status": "active",
+      "connections": []
+    },
+    {
+      "id": "battery-eu-plant",
+      "name": "Battery Plant B – Europe",
+      "stage": "battery_manufacturing",
+      "latitude": 50.11,
+      "longitude": 8.68,
+      "country": "Germany",
+      "operator": "EuroCell",
+      "capacity_tpa": null,
+      "status": "planned",
+      "connections": []
+    },
+    {
+      "id": "battery-asia-plant",
+      "name": "Battery Plant C – East Asia",
+      "stage": "battery_manufacturing",
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "country": "China",
+      "operator": "APAC Cells",
+      "capacity_tpa": null,
+      "status": "active",
+      "connections": []
+    }
+  ]
+}
